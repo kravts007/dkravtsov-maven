@@ -1,4 +1,5 @@
-import homework_16.StringCollectionImpl;
+package homework_16;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
