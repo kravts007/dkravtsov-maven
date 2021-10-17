@@ -16,12 +16,12 @@ public class StringFilterUpperCaseTest {
         collection.add("KATYA");
         collection.add("yulia");
         //expected
-        List<String> expectedlist = new ArrayList<>();
-        expectedlist.add("IVANNA");
-        expectedlist.add("IRYNA");
-        expectedlist.add("INNA13");
+        List<String> expectedList = new ArrayList<>();
+        expectedList.add("IVANNA");
+        expectedList.add("IRYNA");
+        expectedList.add("INNA13");
         //actual
         collection = StringFilterUpperCase.upperCaseAndSort(collection);
-        Assertions.assertEquals(collection, expectedlist);
+        Assertions.assertEquals(collection, expectedList);
     }
 }

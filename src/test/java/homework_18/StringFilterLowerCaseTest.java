@@ -18,12 +18,12 @@ public class StringFilterLowerCaseTest {
         collection.add("brage");
         collection.add("win");
         //expected
-        List<String> expectedlist = new ArrayList<>();
-        expectedlist.add("joah");
-        expectedlist.add("nOOb");
+        List<String> expectedList = new ArrayList<>();
+        expectedList.add("joah");
+        expectedList.add("nOOb");
         //actual
         collection = StringFilterLowerCase.lowerCaseAndSort(collection);
-        Assertions.assertEquals(expectedlist, collection);
+        Assertions.assertEquals(expectedList, collection);
     }
 
 }
