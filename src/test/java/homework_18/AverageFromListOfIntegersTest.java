@@ -6,10 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class AverageFromListOfIntegersTest {
-    static List<Integer> integers = new ArrayList<>();
-
     @Test
     public void calculateAverageColTest() {
         List<Integer> collection = new ArrayList<>();
