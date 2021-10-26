@@ -41,9 +41,9 @@ public class ATM extends Thread {
     public void getCash() {
         int cashTakeOff = randomCash(withdrawMaxValue);
         synchronized (lock) {
-            while (cashTakeOff < 0 || cashTakeOff > sum) {
+            while (cashTakeOff < 0 || cashTakeOff >= sum) {
                 System.out.println(Thread.currentThread().getName() + " try to withdraw invalid value " + cashTakeOff);
-                System.out.println("Not enough money at the ATM: " + sum);
+                System.out.println("Money at the ATM: " + sum);
                 System.out.println("Enter an amount less than " + sum + " and above 0");
                 Scanner sc = new Scanner(System.in);
                 cashTakeOff = sc.nextInt();
@@ -54,7 +54,7 @@ public class ATM extends Thread {
     }
 
     /**
-     * Threads User1 & User2
+     * Thread User1
      */
     public static class User1 implements Runnable {
         ATM atm;
@@ -75,6 +75,9 @@ public class ATM extends Thread {
         }
     }
 
+    /**
+     * Thread User2
+     */
     public static class User2 implements Runnable {
         ATM atm;
 
