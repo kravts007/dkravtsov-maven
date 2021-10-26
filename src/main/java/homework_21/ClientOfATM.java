@@ -8,13 +8,10 @@ public class ClientOfATM {
     public static void main(String[] args) {
         ATM atm = new ATM(10, 1000, 1000);
         System.out.println("\n" + atm + "\n");
+        ATM.User1 user1 = new ATM.User1(atm);
+        ATM.User2 user2 = new ATM.User2(atm);
+        new Thread(user1).start();
+        new Thread(user2).start();
 
-        for (int i = 0; i < 10; i++) {
-            int rand = RANDOM.nextInt(10);
-            atm.putCash();
-            if (rand % 2 == 0) {
-                atm.getCash();
-            }
-        }
     }
 }
