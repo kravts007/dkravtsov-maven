@@ -5,6 +5,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * 1 - Имеется коллекция из Integers, использую стримы посчитать среднее значения всех чисел
+ */
+
 public class AverageFromListOfIntegers {
     public static void main(String[] args) {
         System.out.println(collectionOfIntegers());

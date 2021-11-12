@@ -7,6 +7,11 @@ import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * 2 - Имеется коллекция из String, отфильтровать String начинающийся с английской гласной,
+ * привести все стринги в UPPERCASE и вернуть коллекцию.
+ */
+
 public class StringFilterLowerCase {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("Joe", "ben", "ANNA","beach", "JohaNna", "ivan", "PEATY", "curwa", "izzi");

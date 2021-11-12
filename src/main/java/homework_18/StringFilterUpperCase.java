@@ -7,6 +7,10 @@ import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * 3 - Имеется коллекция из String, отфильтровать и вывести на экран все значения, которые написаны в loverCase and length = 4
+ */
+
 public class StringFilterUpperCase {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("Joe", "ben", "anna", "Johanna", "Ivan", "eVA!2");
