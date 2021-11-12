@@ -12,6 +12,5 @@ public class ClientOfATM {
         ATM.User2 user2 = new ATM.User2(atm);
         new Thread(user1).start();
         new Thread(user2).start();
-
     }
 }

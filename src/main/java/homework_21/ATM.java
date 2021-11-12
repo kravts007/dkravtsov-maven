@@ -95,7 +95,6 @@ public class ATM extends Thread {
                 }
             }
         }
-
     }
 
     @Override
