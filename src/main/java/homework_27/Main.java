@@ -17,7 +17,6 @@ public class Main {
         System.out.println(getStudentListByLastName("Ivanov"));
     }
 
-
     private static Student getStudentById(int id) throws SQLException {
         final Student result = new Student();
         result.setId(-1);
