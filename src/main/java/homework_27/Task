@@ -1,0 +1,8 @@
+Создать JDBC подключение к БД 'university' (которая была создана в HW to Lesson 26)
+
+Написать методы которые будут добавлять и удалять сущность Student, получать всех студентов.
+
+Student getStudentById(int id)
+boolean deleteStudentById(int id)
+List<Student> getAllStudents()
+List<Student> getStudentListByLastName(String lastName)
