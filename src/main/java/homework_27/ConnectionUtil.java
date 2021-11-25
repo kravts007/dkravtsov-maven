@@ -12,14 +12,14 @@ public class ConnectionUtil {
     private static final Connection CONNECTION = buildConn();
 
     private static Connection buildConn() {
-        Connection conn = null;
+        Connection localConn = null;
         try {
-            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            localConn = DriverManager.getConnection(URL, USER, PASSWORD);
             System.err.println("Подключение успешно");
         } catch (SQLException e) {
             System.out.println("Не удалось подключиться");
         }
-        return conn;
+        return localConn;
     }
 
     public static Connection getConn() {
