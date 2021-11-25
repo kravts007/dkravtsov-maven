@@ -11,7 +11,7 @@ public class ConnectionUtil {
     private static final String PASSWORD = "secret123";
     private static final Connection CONNECTION = buildConn();
 
-    public static Connection buildConn() {
+    private static Connection buildConn() {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
