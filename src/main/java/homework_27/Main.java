@@ -15,7 +15,9 @@ public class Main {
 //        System.out.println(deleteStudentById(8));
 //        System.out.println(getAllStudents());
         System.out.println(getStudentListByLastName("Ivanov"));
-
+//        for (int i = 0; i < 150; i++) {
+//            System.out.println(i + "------" + getStudentListByLastName("Ivanov") + conn);
+//        }
         ConnectionUtil.shutdown();
     }
 
