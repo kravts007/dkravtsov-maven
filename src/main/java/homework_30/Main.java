@@ -21,6 +21,17 @@ public class Main {
         System.out.println(studentGroupDAO.getAll());
         System.out.println(SEPARATOR);
 
+        StudentGroup group1 = new StudentGroup(5, "ТФ-1017", null);
+        studentGroupDAO.saveOrUpdate(group1);
+        System.out.println(studentGroupDAO.getAll());
+        System.out.println(SEPARATOR);
+
+        System.out.println(studentGroupDAO.get(1));
+        System.out.println(SEPARATOR);
+
+        System.out.println(studentDAO.get(3));
+        System.out.println(SEPARATOR);
+
         System.out.println(studentDAO.getAll());
         System.out.println(SEPARATOR);
 
@@ -30,11 +41,11 @@ public class Main {
         System.out.println(SEPARATOR);
 
         Student student1 = new Student(18, "Ostapa Sergei Sergeich", studentGroupDAO.get(5), 2008);
-        student = studentDAO.saveOrUpdate(student1);
+        student1 = studentDAO.saveOrUpdate(student1);
         System.out.println(studentDAO.getAll());
         System.out.println(SEPARATOR);
 
-        System.out.println(studentDAO.findByNameContaining("Koza4214124"));
+        System.out.println(studentDAO.findByNameContaining("Koza"));
         System.out.println(SEPARATOR);
     }
 }
