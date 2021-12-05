@@ -27,7 +27,7 @@ public class StudentDAO {
 
     public List<Student> getAll() {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            String sql = "SELECT a FROM Student a";
+            String sql = "SELECT st FROM Student st";
             return session.createQuery(sql, Student.class).getResultList();
         }
     }
@@ -35,7 +35,7 @@ public class StudentDAO {
     public List<Student> findByNameContaining(String partOfFullName) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             String partOfName = "%" + partOfFullName + "%";
-            String sql = "SELECT a FROM Student a WHERE a.fio LIKE: partOfName";
+            String sql = "SELECT st FROM Student st WHERE st.fio LIKE: partOfName";
             return session.createQuery(sql, Student.class).setParameter("partOfName", partOfName).getResultList();
         }
     }

@@ -18,7 +18,7 @@ public class StudentGroupDAO {
 
     public List<StudentGroup> getAll() {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            String sql = "SELECT a FROM StudentGroup a";
+            String sql = "SELECT gr FROM StudentGroup gr";
             return session.createQuery(sql, StudentGroup.class).getResultList();
         }
     }
